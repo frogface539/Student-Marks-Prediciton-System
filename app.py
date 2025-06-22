@@ -1,17 +1,11 @@
 import streamlit as st
 import pandas as pd
-import pickle
+import joblib
 import plotly.graph_objects as go
 
-# Load models and expected columns
-with open("ada_boost_model.pkl", "rb") as f:
-    ada_model = pickle.load(f)
-
-with open("gradient_boost_model.pkl", "rb") as f:
-    gbr_model = pickle.load(f)
-
-with open("model_columns.pkl", "rb") as f:
-    expected_columns = pickle.load(f)
+ada_model = joblib.load("models/ada_boost_model.pkl")
+gbr_model = joblib.load("models/gradient_boost_model.pkl")
+expected_columns = joblib.load("models/model_columns.pkl")
 
 st.set_page_config(page_title="Student Score Predictor", layout="centered")
 
