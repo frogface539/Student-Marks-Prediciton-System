@@ -1,0 +1,38 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Jupyter Notebook checkpoints (if any)
+.ipynb_checkpoints/
+
+# Environment folders
+venv/
+.env/
+.envrc
+
+# VS Code settings
+.vscode/
+
+# Model artifacts
+*.pkl
+*.joblib
+*.sav
+
+# Logs and outputs
+*.log
+*.out
+*.tmp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/config.toml
+
+# Git
+*.swp
+*.swo
